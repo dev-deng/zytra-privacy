@@ -1,110 +1,231 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zytra – Datenschutzerklärung / Privacy Policy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung – Zytra</title>
   <style>
+    :root { color-scheme: light dark; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #1a1a1a;
-      line-height: 1.6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 760px; margin: 0 auto; padding: 32px 20px 64px;
+      line-height: 1.6; color: #1e1b1b; background: #f7ede8;
     }
-    h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.1rem; margin-top: 2rem; }
-    .lang-switch { margin-bottom: 2rem; }
-    .lang-switch a { margin-right: 12px; color: #5a6b7b; }
-    .divider { border: none; border-top: 1px solid #e0e0e0; margin: 3rem 0; }
-    small { color: #666; }
+    @media (prefers-color-scheme: dark) { body { color: #ece0e4; background: #161012; } a { color: #d8a8b8; } }
+    h1 { font-size: 1.8rem; margin-bottom: .25rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #e6d2d8; padding-bottom: .3rem; }
+    .meta { color: #524340; font-size: .9rem; }
+    .lang { margin: 8px 0 24px; font-size: .95rem; }
+    a { color: #8b5a6b; }
+    ul { padding-left: 1.2rem; }
+    code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 4px; }
+    hr { border: none; border-top: 1px solid #e6d2d8; margin: 56px 0; }
   </style>
 </head>
 <body>
 
-  <div class="lang-switch">
-    <a href="#de">Deutsch</a>
-    <a href="#en">English</a>
-  </div>
+  <p class="lang"><a href="#de">Deutsch</a> &middot; <a href="#en">English</a></p>
 
-  <!-- ───────────────── DEUTSCH ───────────────── -->
+  <!-- ════════════════════════ DEUTSCH ════════════════════════ -->
   <section id="de">
-    <h1>Datenschutzerklärung</h1>
-    <small>Stand: 2026-05-03</small>
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">App: <strong>Zytra</strong> (<code>com.zytra.app</code>) &middot; Stand: 01.06.2026</p>
 
-    <h2>Verantwortlicher</h2>
-    <p>DevDeng<br>
-    E-Mail: <a href="mailto:muster@gmail.com">dev.deng26@gmail.com</a></p>
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    DevDeng<br>
+    Kontakt: <a href="mailto:dev.deng26@gmail.com">dev.deng26@gmail.com</a>
+  </p>
 
-    <h2>Welche Daten werden gespeichert?</h2>
-    <p>Zytra speichert alle Daten <strong>ausschließlich lokal auf deinem Gerät</strong>.
-    Dazu gehören Zyklusdaten, Symptome, Stimmungseinträge, Einstellungen sowie
-    ein PBKDF2-Hash deiner PIN (kein Klartext). Es werden keine personenbezogenen
-    Daten an externe Server übermittelt.</p>
+  <h2>2. Überblick</h2>
+  <p>
+    Zytra ist eine App zum Tracken des Menstruationszyklus. <strong>Zytra erhebt, sammelt oder
+    überträgt keine personenbezogenen Daten.</strong> Sämtliche Daten, die du in der App erfasst –
+    auch besonders sensible Gesundheitsdaten zu deinem Zyklus –, verbleiben ausschließlich lokal auf
+    deinem Gerät. Es gibt kein Nutzerkonto, keine Cloud-Anbindung und kein Tracking.
+  </p>
 
-    <h2>Was passiert nicht?</h2>
-    <ul>
-      <li>Keine Übertragung an Server oder Cloud-Dienste</li>
-      <li>Keine Drittanbieter-Analytics oder Tracking</li>
-      <li>Keine Werbung, keine Weitergabe an Dritte</li>
-      <li>Keine Standortdaten, kein Zugriff auf Kontakte oder Kamera</li>
-    </ul>
+  <h2>3. Welche Daten verarbeitet die App – und wo?</h2>
+  <p>Ausschließlich lokal auf deinem Gerät gespeichert werden:</p>
+  <ul>
+    <li>Periodendaten (Datum, Flussstärke),</li>
+    <li>Symptome (Art und Schweregrad) und tägliche Einträge bzw. Notizen,</li>
+    <li>Zyklus-Einstellungen (z. B. durchschnittliche Zyklus- und Periodenlänge),</li>
+    <li>Erinnerungen sowie App-Einstellungen (z. B. Sprache, Darstellung, Auto-Backup-Konfiguration),</li>
+    <li>falls du die App-Sperre aktivierst: deine PIN – ausschließlich als kryptographischer Hash
+      (siehe Abschnitt 5), niemals im Klartext.</li>
+  </ul>
+  <p>
+    Diese Daten liegen in einer app-internen Datenbank bzw. in lokalen Einstellungs-Dateien, auf die
+    andere Apps keinen Zugriff haben. Es findet <strong>keine Übertragung an den Anbieter oder
+    Dritte</strong> statt.
+  </p>
 
-    <h2>Backup</h2>
-    <p>Die App bietet eine optionale Backup-Funktion. Backups werden nur bei
-    bewusster Nutzeraktion erstellt und an einem Speicherort deiner Wahl
-    auf dem Gerät abgelegt. Die Backup-Datei verlässt dein Gerät nur, wenn
-    du sie aktiv teilst oder überträgst.</p>
+  <h2>4. Keine Internet-Datenübertragung</h2>
+  <p>
+    Die App fordert <strong>keine Internet-Berechtigung</strong> an und sendet von sich aus keine
+    Daten an Server. Eine Verarbeitung deiner Zyklus- oder Gesundheitsdaten außerhalb deines Geräts
+    findet nicht statt.
+  </p>
 
-    <h2>Datenlöschung</h2>
-    <p>Alle gespeicherten Daten können jederzeit vollständig gelöscht werden,
-    indem die App deinstalliert wird. Eine manuelle Löschung ist zusätzlich
-    über den Bereich „Einstellungen → Daten zurücksetzen" möglich.</p>
+  <h2>5. App-Sperre (PIN)</h2>
+  <p>
+    Optional kannst du Zytra mit einer PIN schützen. Deine PIN wird <strong>nicht im Klartext</strong>
+    gespeichert, sondern nur als gesalzener Einweg-Hash (PBKDF2-HMAC-SHA256, 600.000 Iterationen).
+    Aus diesem Hash lässt sich die PIN nicht zurückrechnen; entsprechend ist eine Wiederherstellung
+    einer vergessenen PIN technisch nicht möglich. Der Hash verbleibt – wie alle anderen Daten –
+    lokal auf deinem Gerät.
+  </p>
 
-    <h2>Kontakt</h2>
-    <p>Bei Fragen zum Datenschutz erreichst du uns unter:<br>
-    <a href="mailto:muster@gmail.com">muster@gmail.com</a></p>
+  <h2>6. Berechtigungen</h2>
+  <ul>
+    <li><strong>Benachrichtigungen</strong> (<code>POST_NOTIFICATIONS</code>): nur zum Anzeigen der von
+      dir eingestellten Erinnerungen.</li>
+    <li><strong>Exakte Alarme</strong> (<code>USE_EXACT_ALARM</code> / <code>SCHEDULE_EXACT_ALARM</code>):
+      damit Erinnerungen zur eingestellten Uhrzeit ausgelöst werden.</li>
+    <li><strong>Start abgeschlossen</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): um eingestellte
+      Erinnerungen nach einem Geräte-Neustart wiederherzustellen.</li>
+  </ul>
+
+  <h2>7. Backups und Exporte (durch dich gesteuert)</h2>
+  <ul>
+    <li><strong>Manuelle Exporte</strong> (JSON-Backup, PDF-Bericht): Du löst sie selbst aus und wählst
+      das Ziel (z. B. Teilen oder einen Ordner deiner Wahl). Nur dann verlassen die Daten das Gerät –
+      auf deine Veranlassung.</li>
+    <li><strong>Automatisches Backup in der App:</strong> optional; schreibt eine Backup-Datei in einen
+      von dir gewählten Ordner.</li>
+    <li><strong>Android-System-Backup:</strong> Falls du in den Android-Einstellungen Geräte-Backups
+      aktiviert hast, kann das Betriebssystem App-Daten in dein persönliches Google-Konto sichern. Dies
+      steuerst du über das Betriebssystem, nicht über Zytra; es unterliegt der Datenschutzerklärung von
+      Google.</li>
+  </ul>
+
+  <h2>8. Bewertungsdialog (Google Play In-App-Review)</h2>
+  <p>
+    Die App kann gelegentlich den offiziellen Bewertungsdialog von Google Play anzeigen. Dabei werden
+    <strong>keine</strong> deiner App- oder Gesundheitsdaten übertragen; der Dialog wird von Google Play
+    bereitgestellt und unterliegt der Datenschutzerklärung von Google.
+  </p>
+
+  <h2>9. Kinder</h2>
+  <p>Die App richtet sich nicht gezielt an Kinder und erhebt keine Daten von Kindern.</p>
+
+  <h2>10. Deine Rechte</h2>
+  <p>
+    Da keine personenbezogenen Daten an uns übertragen werden, liegen bei uns keine deiner Daten vor,
+    die wir auskunfts-, berichtigungs- oder löschpflichtig verwalten könnten. Du hast jederzeit die
+    volle Kontrolle über die lokal gespeicherten Daten und kannst sie in der App bzw. über die
+    Android-Einstellungen („App-Daten löschen") oder durch Deinstallation vollständig entfernen.
+  </p>
+
+  <h2>11. Änderungen</h2>
+  <p>
+    Bei künftigen App-Versionen kann diese Erklärung angepasst werden. Die jeweils aktuelle Fassung ist
+    unter dieser URL abrufbar; das Datum oben weist den Stand aus.
+  </p>
+
+  <h2>12. Kontakt</h2>
+  <p>Fragen zum Datenschutz: <a href="mailto:dev.deng26@gmail.com">dev.deng26@gmail.com</a></p>
   </section>
 
-  <hr class="divider">
+  <hr>
 
-  <!-- ───────────────── ENGLISH ───────────────── -->
+  <!-- ════════════════════════ ENGLISH ════════════════════════ -->
   <section id="en">
-    <h1>Privacy Policy</h1>
-    <small>Last updated: 2026-05-03</small>
+  <h1>Privacy Policy</h1>
+  <p class="meta">App: <strong>Zytra</strong> (<code>com.zytra.app</code>) &middot; Last updated: 2026-06-01</p>
 
-    <h2>Controller</h2>
-    <p>DevDeng<br>
-    Email: <a href="mailto:muster@gmail.com">muster@gmail.com</a></p>
+  <h2>1. Data controller</h2>
+  <p>
+    DevDeng<br>
+    Contact: <a href="mailto:dev.deng26@gmail.com">dev.deng26@gmail.com</a>
+  </p>
 
-    <h2>What data is stored?</h2>
-    <p>Zytra stores all data <strong>exclusively on your device</strong>.
-    This includes cycle data, symptoms, mood entries, settings, and a
-    PBKDF2 hash of your PIN (never in plain text). No personal data is
-    transmitted to external servers.</p>
+  <h2>2. Overview</h2>
+  <p>
+    Zytra is an app for tracking the menstrual cycle. <strong>Zytra does not collect, gather or transmit
+    any personal data.</strong> All data you enter in the app – including sensitive health data about
+    your cycle – stays exclusively on your device. There is no user account, no cloud connection and no
+    tracking.
+  </p>
 
-    <h2>What does not happen?</h2>
-    <ul>
-      <li>No transmission to servers or cloud services</li>
-      <li>No third-party analytics or tracking</li>
-      <li>No advertising, no sharing with third parties</li>
-      <li>No location data, no access to contacts or camera</li>
-    </ul>
+  <h2>3. What data does the app process – and where?</h2>
+  <p>Stored exclusively on your device:</p>
+  <ul>
+    <li>period data (date, flow intensity),</li>
+    <li>symptoms (type and severity) and daily entries or notes,</li>
+    <li>cycle settings (e.g. average cycle and period length),</li>
+    <li>reminders and app settings (e.g. language, appearance, auto-backup configuration),</li>
+    <li>if you enable the app lock: your PIN – only as a cryptographic hash (see section 5), never in
+      plain text.</li>
+  </ul>
+  <p>
+    This data lives in an app-internal database and in local settings files that other apps cannot
+    access. <strong>No transfer to the provider or to third parties</strong> takes place.
+  </p>
 
-    <h2>Backup</h2>
-    <p>The app offers an optional backup feature. Backups are created only
-    upon deliberate user action and saved to a storage location of your
-    choice on your device. The backup file only leaves your device if you
-    actively share or transfer it.</p>
+  <h2>4. No internet data transfer</h2>
+  <p>
+    The app requests <strong>no internet permission</strong> and does not send any data to servers on
+    its own. Your cycle or health data is never processed off your device.
+  </p>
 
-    <h2>Data deletion</h2>
-    <p>All stored data can be permanently deleted at any time by uninstalling
-    the app. Manual deletion is also available via Settings → Reset data.</p>
+  <h2>5. App lock (PIN)</h2>
+  <p>
+    You can optionally protect Zytra with a PIN. Your PIN is <strong>not stored in plain text</strong>,
+    only as a salted one-way hash (PBKDF2-HMAC-SHA256, 600,000 iterations). The PIN cannot be derived
+    from this hash; consequently, a forgotten PIN cannot be recovered. Like all other data, the hash
+    stays locally on your device.
+  </p>
 
-    <h2>Contact</h2>
-    <p>For privacy-related questions, please contact us at:<br>
-    <a href="mailto:muster@gmail.com">muster@gmail.com</a></p>
+  <h2>6. Permissions</h2>
+  <ul>
+    <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): only to display the reminders
+      you have set.</li>
+    <li><strong>Exact alarms</strong> (<code>USE_EXACT_ALARM</code> / <code>SCHEDULE_EXACT_ALARM</code>):
+      so reminders trigger at the configured time.</li>
+    <li><strong>Boot completed</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): to restore your reminders
+      after a device restart.</li>
+  </ul>
+
+  <h2>7. Backups and exports (controlled by you)</h2>
+  <ul>
+    <li><strong>Manual exports</strong> (JSON backup, PDF report): you trigger them yourself and choose
+      the destination (e.g. share or a folder of your choice). Only then does data leave the device – at
+      your request.</li>
+    <li><strong>Automatic backup in the app:</strong> optional; writes a backup file to a folder you
+      select.</li>
+    <li><strong>Android system backup:</strong> if you have enabled device backups in your Android
+      settings, the operating system may back up app data to your personal Google account. You control
+      this via the operating system, not via Zytra; it is subject to Google's privacy policy.</li>
+  </ul>
+
+  <h2>8. Rating dialog (Google Play In-App Review)</h2>
+  <p>
+    The app may occasionally show the official Google Play rating dialog. <strong>None</strong> of your
+    app or health data is transmitted in the process; the dialog is provided by Google Play and is
+    subject to Google's privacy policy.
+  </p>
+
+  <h2>9. Children</h2>
+  <p>The app is not directed at children and does not collect data from children.</p>
+
+  <h2>10. Your rights</h2>
+  <p>
+    Since no personal data is transmitted to us, we hold none of your data that we could be required to
+    disclose, correct or delete. You always have full control over the locally stored data and can
+    remove it completely within the app, via the Android settings ("Clear app data") or by uninstalling
+    the app.
+  </p>
+
+  <h2>11. Changes</h2>
+  <p>
+    This policy may be updated for future app versions. The current version is always available at this
+    URL; the date above indicates its status.
+  </p>
+
+  <h2>12. Contact</h2>
+  <p>Privacy questions: <a href="mailto:dev.deng26@gmail.com">dev.deng26@gmail.com</a></p>
   </section>
 
 </body>
