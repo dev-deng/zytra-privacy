@@ -29,7 +29,7 @@
   <!-- ════════════════════════ DEUTSCH ════════════════════════ -->
   <section id="de">
   <h1>Datenschutzerklärung</h1>
-  <p class="meta">App: <strong>Zytra</strong> (<code>com.zytra.app</code>) &middot; Stand: 20.07.2026</p>
+  <p class="meta">App: <strong>Zytra</strong> (<code>com.zytra.app</code>) &middot; Stand: 26.07.2026</p>
   <p class="meta">Siehe auch: <a href="https://dev-deng.github.io/zytra-privacy/terms.html">Nutzungsbedingungen</a></p>
 
   <h2>1. Verantwortlicher</h2>
@@ -95,12 +95,18 @@
     <li><strong>Manuelle Exporte</strong> (JSON-Backup, PDF-Bericht): Du löst sie selbst aus und wählst
       das Ziel (z. B. Teilen oder einen Ordner deiner Wahl). Nur dann verlassen die Daten das Gerät –
       auf deine Veranlassung.</li>
-    <li><strong>Automatisches Backup in der App:</strong> optional; schreibt eine Backup-Datei in einen
-      von dir gewählten Ordner.</li>
+    <li><strong>Automatisches Backup in der App:</strong> optional. Ohne eigene Ordnerwahl wird die
+      Backup-Datei im app-internen Speicher abgelegt – dort ist sie für andere Apps und für den
+      Dateizugriff per USB nicht sichtbar. Wählst du in den Backup-Einstellungen einen Ordner aus, wird
+      sie stattdessen dorthin geschrieben und ist über Dateimanager und USB erreichbar. Die Datei ist in
+      beiden Fällen unverschlüsseltes JSON; es werden höchstens fünf Dateien aufbewahrt, ältere werden
+      gelöscht.</li>
     <li><strong>Android-System-Backup:</strong> Falls du in den Android-Einstellungen Geräte-Backups
-      aktiviert hast, kann das Betriebssystem App-Daten in dein persönliches Google-Konto sichern. Dies
-      steuerst du über das Betriebssystem, nicht über Zytra; es unterliegt der Datenschutzerklärung von
-      Google.</li>
+      aktiviert hast, kann das Betriebssystem App-Daten in dein persönliches Google-Konto sichern.
+      Gesichert werden die Zyklus-Datenbank und deine App-Einstellungen einschließlich der Konfiguration
+      der App-Sperre (die PIN nur als gesalzener Hash, nie im Klartext) – damit deine Daten nach einem
+      Gerätewechsel weiterhin geschützt sind. Dies steuerst du über das Betriebssystem, nicht über Zytra;
+      es unterliegt der Datenschutzerklärung von Google.</li>
   </ul>
 
   <h2>8. Bewertungsdialog (Google Play In-App-Review)</h2>
@@ -136,7 +142,7 @@
   <!-- ════════════════════════ ENGLISH ════════════════════════ -->
   <section id="en">
   <h1>Privacy Policy</h1>
-  <p class="meta">App: <strong>Zytra</strong> (<code>com.zytra.app</code>) &middot; Last updated: 2026-07-20</p>
+  <p class="meta">App: <strong>Zytra</strong> (<code>com.zytra.app</code>) &middot; Last updated: 2026-07-26</p>
   <p class="meta">See also: <a href="https://dev-deng.github.io/zytra-privacy/terms.html">Terms of Use</a></p>
 
   <h2>1. Data controller</h2>
@@ -199,11 +205,16 @@
     <li><strong>Manual exports</strong> (JSON backup, PDF report): you trigger them yourself and choose
       the destination (e.g. share or a folder of your choice). Only then does data leave the device – at
       your request.</li>
-    <li><strong>Automatic backup in the app:</strong> optional; writes a backup file to a folder you
-      select.</li>
+    <li><strong>Automatic backup in the app:</strong> optional. Unless you pick a folder yourself, the
+      backup file is stored in the app's internal storage – invisible to other apps and to file access
+      over USB. If you select a folder in the backup settings, the file is written there instead and is
+      reachable via file managers and USB. In both cases the file is unencrypted JSON; at most five
+      files are kept, older ones are deleted.</li>
     <li><strong>Android system backup:</strong> if you have enabled device backups in your Android
-      settings, the operating system may back up app data to your personal Google account. You control
-      this via the operating system, not via Zytra; it is subject to Google's privacy policy.</li>
+      settings, the operating system may back up app data to your personal Google account. This covers
+      the cycle database and your app settings including the app lock configuration (the PIN only as a
+      salted hash, never in plain text) – so your data stays protected after switching devices. You
+      control this via the operating system, not via Zytra; it is subject to Google's privacy policy.</li>
   </ul>
 
   <h2>8. Rating dialog (Google Play In-App Review)</h2>
